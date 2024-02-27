@@ -1,0 +1,18 @@
+
+
+
+# newsdata api werkt niet meer. omdat er een bepaalde beperking is ingebouwd in hun api. 
+# geen zin meer om dat te fixen. liever op zoek naar andere bronnen
+
+
+# mooie knop gemaakt maar wellicht nog andere styling toepassen op de text (aparte css block voor maken)
+# de knop werkend krijgen
+##### dan gaat aan de slag (iets van een animatie tonen, want kan prima 30 seconden duren)
+##### dan laat krant zien
+##### vervolgens hierin beperkingen inbouwen. zo van: 1 krant per dag. (het nieuws is geen rad van fortuin waar je maar weer opnieuw aandraait als het je niet bevalt)
+
+
+### next step:
+### ook nog een andere layout vd krant proberen. dat je er meer doorheen bladert oid
+### andere nieuws bronnen uitproberen.
+### daarna: een soort categorisering aanmaken. binnenland, buitenland, wetenschap, economie, sport.. etc.

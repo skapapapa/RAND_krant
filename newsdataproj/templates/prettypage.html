@@ -1,0 +1,34 @@
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/newspaper.css">
+    <title>Uw random krant van de dag - Rand.Krant()</title>
+    <meta name="viewport" content="width=device-width">
+
+</head>
+<body>
+    <div class="head">
+        <div class="headerobjectswrapper">
+            <header>Rand.Krant()</header>
+        </div>
+
+        <div class="subhead">Amsterdam, binnen de ring - {{ pd }}</div>
+    </div>
+    <div class="content">
+        <div class="collumns">
+            {% for item in nc %}    
+            <div class="collumn">
+                <div class="head"><span class="{{ item['primaryheader'] }}">{{ item['title'] }}</span><p><span class="{{ item['secondaryheader'] }}">{{ item['source_id'] }}</span></p></div>
+            {{ item['description'] }}  
+            <br>
+            <a href="{{ item['link'] }}" target="_blank">Lees meer...</a>        
+        </p></div>
+            {% endfor %}
+        </div>
+    </div>
+
+</body>
+</html>
